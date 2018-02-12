@@ -171,13 +171,14 @@ is an alist containing the elements:
                      (.question_id " on:")
                      (t ":")))
        'face (if .is_unread 'sx-inbox-item-type-unread 'sx-inbox-item-type))
-      (list
+      (list (propertize " " 'display
        (concat (sx-time-since .creation_date)
-               sx-question-list-ago-string)
-       'face 'sx-question-list-date)
-      (list
-       (propertize " " 'display
-        (concat "  " (propertize (or .title "") 'face 'sx-question-list-date) "\n"
+               sx-question-list-ago-string "\n")
+       'face 'sx-question-list-date))
+      (list (propertize " " 'display
+        (concat
+          (when .title
+            (propertize (concat "  " .title "\n") 'face 'sx-question-list-date))
           (when .body
             (let (end-1 start-2 text)
              (while (and

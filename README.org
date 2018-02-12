@@ -1,5 +1,14 @@
 #+Title: SX -- Stack Exchange for Emacs
 
+This is a fork of https://github.com/vermiculus/sx.el until all my pull requests
+to that project are merged, so that others may benefit early from those pull
+requests. The version here fixes the display of stackexchange notifications
+(`C-u s i` by default), prettifies the display of all inboxes (`s i`), and for
+inbox links that are not yet supported by either the stackexchange API or by
+`sx.el`, allows the user to open those links in their emacs-default browser
+(press RETURN while on an inbox item).
+
+* Original site README begins here!
 [[https://travis-ci.org/vermiculus/sx.el][https://travis-ci.org/vermiculus/sx.el.svg?branch=master]]
 [[http://melpa.org/#/sx][file:http://melpa.org/packages/sx-badge.svg]]
 [[http://stable.melpa.org/#/sx][file:http://stable.melpa.org/packages/sx-badge.svg]]
