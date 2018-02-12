@@ -3,9 +3,9 @@
 This is a fork of https://github.com/vermiculus/sx.el until all my pull requests
 to that project are merged, so that others may benefit early from those pull
 requests. The version here fixes the display of stackexchange notifications
-(`C-u s i` by default), prettifies the display of all inboxes (`s i`), and for
+(=C-u s i= by default), prettifies the display of all inboxes (=s i=), and for
 inbox links that are not yet supported by either the stackexchange API or by
-`sx.el`, allows the user to open those links in their emacs-default browser
+=sx.el=, allows the user to open those links in their emacs-default browser
 (press RETURN while on an inbox item).
 
 * Original site README begins here!
